@@ -1,22 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
+// Simple functional component
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Welcome to My React App</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is a simple boilerplate for testing the setup of src/App.js.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
