@@ -1,0 +1,94 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.picture img {
+    border-radius: 50%;
+    width: 220px; /* Increased size */
+    height: 220px; /* Increased size */
+    object-fit: cover; /* Ensure the image keeps its aspect ratio */
+    display: block;
+}
+
+.info h1 {
+    margin: 20px 0 10px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header and Navigation Styling */
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.header-nav h1 {
+    margin: 0;
+    padding-right: 20px;
+    border-bottom: 2px solid #34495e;
+}
+
+.navigation {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2ecc71;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* About Section Styling */
+.about {
+    margin-top: 20px;
+}
+
+.about p {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
