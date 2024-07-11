@@ -64,21 +64,31 @@ body {
     margin: 0;
     padding-right: 20px;
     border-bottom: 2px solid #34495e;
+    font-size: 36px; /* Adjusted font size */
+    display: inline-block; /* Ensure the <h1> only takes the necessary width */
+    width: auto; /* Ensure the <h1> only takes the necessary width */
 }
 
 .navigation {
     display: flex;
     gap: 15px;
+    background-color: #2c3e50; /* Background color for the navigation */
+    padding: 15px 10px; /* Adjusted padding to increase height */
+    border-radius: 10px; /* Adjust border radius to control the roundness of corners */
 }
 
 .navigation a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    background-color: #2ecc71;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners for each link */
 }
+
+.navigation a.active {
+    color: black; /* Change this to the desired highlight color */
+}
+
 
 /* About Section Styling */
 .about {
