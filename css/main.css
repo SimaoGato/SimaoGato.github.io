@@ -12,6 +12,8 @@ body {
     justify-content: center;
 }
 
+
+/* Sidebar Content Styling */
 .sidebar {
     width: 20%;
     min-height: 95vh; /* Ensures the sidebar takes up at least 95% of the viewport height */
@@ -81,6 +83,7 @@ body {
     margin: 8px 0; /* Adjusted margin */
     font-size: 1em; /* Slightly larger font size */
 }
+/* -- End of Sidebar Content Styling -- */
 
 
 .main-content {
@@ -125,6 +128,7 @@ body {
 .navigation a.active {
     color: #1abc9c; /* Change this to the desired highlight color */
 }
+/* -- End of Header and Navigation Styling -- */
 
 
 /* About Section Styling */
@@ -139,8 +143,10 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* -- End of About Section Styling -- */
 
 
+/* Skills Section Styling */
 .education{
     background-color: white;
     border-radius: 15px;
@@ -212,3 +218,4 @@ body {
     color: #777;
     font-style: italic;
 }
+/* -- End of Skills Section Styling -- */
