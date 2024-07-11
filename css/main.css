@@ -86,7 +86,7 @@ body {
 }
 
 .navigation a.active {
-    color: black; /* Change this to the desired highlight color */
+    color: #1abc9c; /* Change this to the desired highlight color */
 }
 
 
