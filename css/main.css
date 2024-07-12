@@ -39,7 +39,7 @@ body {
 
 /* Sidebar Content Styling */
 .sidebar {
-    width: 20%;
+    width: 19%;
     min-height: 95vh; /* Ensures the sidebar takes up at least 95% of the viewport height */
     max-height: 95vh; /* Limits the sidebar height to the viewport height */
     background-color: var(--primary-color);
@@ -50,7 +50,9 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    margin: 20px;
+    margin: 18px;
+    margin-right: 7px;
+    margin-left: 24px;
     position: -webkit-sticky;
     position: sticky;
     top: 20px;
