@@ -1,12 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Simão Gato - Blog</title>
+        <title>Simão Gato - Musings</title>
         <link rel="icon" href="images/me.png">
         <link rel="stylesheet" href="css/main.css">
+
+        <script>
+        (function() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-applied-mode', currentTheme);
+        })();
+        </script>
+        <script defer src="main.js"></script>
+
     </head>
     <body>
         <div class="container">
@@ -22,9 +30,9 @@
                             <div class="details">
                                 <h2>E-mail</h2>
                                 <p>simao.valedegato@gmail.com</p>
-                            <p>simao.gato@tecnico.ulisboa.pt</p>
+                                <p>simao.gato@tecnico.ulisboa.pt</p>
+                            </div>
                         </div>
-                    </div>
                     <div class="info-container">
                         <div class="icon"><img src="icons/birthday.png" alt="Birthday Icon"></div>
                         <div class="details">
@@ -50,23 +58,25 @@
         <main class="main-content">
             <section class="navbar-container">
                     <div class="header-nav">
-                        <h1>Blog</h1>
+                        <h1>Musings</h1>
                         <nav class="navigation">
                             <li><a href="./">About</a></li>
                             <li><a href="./resume">Resume</a></li>
                             <li><a href="./portfolio">Portfolio</a></li>
-                            <li><a href="./blog" class="active">Blog</a></li>
+                            <li><a href="./musings" class="active">Musings</a></li>
                             <li><a href="./contact">Contact</a></li>
                             <li><a href="assets/curriculum-vitae.pdf" target="_blank">CV</a></li>
+                            <img src="icons/moon.png" id="background-mode" alt="Moon Icon">
                         </nav>
                     </div>
                 </section>
 
                 <section class="about">
-                    <p>Blog stuff goes here.</p>
+                    <p>Musings stuff goes here.</p>
                 </section>
             </main>
         </div>
+    <script src="js/main.js"></script>
     </body>
 </html>
 

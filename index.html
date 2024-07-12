@@ -6,6 +6,15 @@
         <title>Simão Gato - About Me</title>
         <link rel="icon" href="images/me.png">
         <link rel="stylesheet" href="css/main.css">
+
+        <script>
+        (function() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-applied-mode', currentTheme);
+        })();
+        </script>
+        <script defer src="main.js"></script>
+
     </head>
     <body>
         <!-- Common Section Begin -->
@@ -55,9 +64,10 @@
                             <li><a href="./" class="active">About</a></li>
                             <li><a href="./resume">Resume</a></li>
                             <li><a href="./portfolio">Portfolio</a></li>
-                            <li><a href="./blog">Blog</a></li>
+                            <li><a href="./musings">Musings</a></li>
                             <li><a href="./contact">Contact</a></li>
                             <li><a href="assets/curriculum-vitae.pdf" target="_blank">CV</a></li>
+                            <img src="icons/moon.png" id="background-mode" alt="Moon Icon">
                         </nav>
                     </div>
                 </section>
@@ -126,6 +136,7 @@
                     <!-- About Section End -->
             </main>
         </div>
+    <script src="js/main.js"></script>
     </body>
 </html>
 

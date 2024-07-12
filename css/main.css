@@ -1,19 +1,34 @@
-:root {
+:root[data-applied-mode="light"] {
+    color-scheme: light;
     --text-color: #0d121c;
-    --background-color: #fbfcfe;
-    --primary-color: #4b71c3;
+    --text-sidebar-color: #ffffff;
+    --background-color: #ecf0f1;
+    --primary-color: #586187;
     --secondary-color: #98afe2;
+    --timeline-color: #fbfcfe;
+    --card-color: #fbfcfe;
     --accent-color: #6288da; /* Accent color for buttons and links */
 }
 
+:root[data-applied-mode="dark"] {
+    color-scheme: dark;
+    --text-color: #e3e8f2;
+    --text-sidebar-color: #ffffff;
+    --background-color: #262629;
+    --primary-color: #586187;
+    --secondary-color: #6060D1;
+    --timeline-color: #6A6A73;
+    --card-color: #45474e;
+    --accent-color: #254b9d;
+}
 
 /* Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ecf0f1;
-    color: #2c3e50;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .container {
@@ -27,8 +42,8 @@ body {
     width: 20%;
     min-height: 95vh; /* Ensures the sidebar takes up at least 95% of the viewport height */
     max-height: 95vh; /* Limits the sidebar height to the viewport height */
-    background-color: #34495e;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-sidebar-color);
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -83,7 +98,7 @@ body {
 .info h2 {
     margin: 3px 0; /* Adjusted margin */
     font-size: 1.2em; /* Slightly larger font size */
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--text-sidebar-color); /* Added underline */
     line-height: 0.1em; /* Decrease line height to make the border thinner */
     padding-bottom: 12px; /* Adjust padding to control distance between text and border */
 }
@@ -128,7 +143,7 @@ body {
 .header-nav h1 {
     margin: 0;
     padding-right: 20px;
-    border-bottom: 2px solid #34495e;
+    border-bottom: 2px solid var(--secondary-color);
     font-size: 36px; /* Adjusted font size */
     display: inline-block; /* Ensure the <h1> only takes the necessary width */
     width: auto; /* Ensure the <h1> only takes the necessary width */
@@ -136,15 +151,32 @@ body {
 
 .navigation {
     display: flex;
+    align-items: center;
     gap: 15px;
-    background-color: #34495e;
-    padding: 15px 10px; /* Adjusted padding to increase height */
+    background-color: var(--primary-color);
+    padding: 7px 10px; /* Adjusted padding to increase height */
     border-radius: 10px; /* Adjust border radius to control the roundness of corners */
     list-style-type: none; /* Remove default list style */
 }
 
+.navigation img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: auto; /* This pushes the icon to the right */
+}
+
+.navigation li {
+    display: flex; /* This ensures the content inside <li> is aligned */
+    align-items: center;
+}
+
 .navigation a {
-    color: white;
+    display: flex; /* This ensures the content inside <a> is aligned */
+    align-items: center;
+    color: var(--background-color);
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -152,8 +184,17 @@ body {
 }
 
 .navigation a.active {
-    color: #1abc9c; /* Change this to the desired highlight color */
+    color: var(--text-color);
 }
+
+.navigation img {
+    width: 25px; /* Adjust the size as needed */
+    height: 25px; /* Adjust the size as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 5px; /* Add some padding if needed */
+    border-radius: 50%; /* Make the image rounded if desired */
+}
+
 /* -- End of Header and Navigation Styling -- */
 
 
@@ -163,7 +204,7 @@ body {
 }
 
 .about-me {
-    background-color: white;
+    background-color: var(--card-color); /* Changed background color */
     padding: 15px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -173,12 +214,12 @@ body {
 .about-me p {
     margin-bottom: 15px;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* Hobbies Section Styling */
 .hobbies {
-    background-color: white;
+    background-color: var(--card-color);
     padding: 15px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -186,9 +227,9 @@ body {
 
 .hobbies h2 {
     font-size: 24px;
-    color: #2c3e50;
+    color: var(--text-color);
     margin-bottom: 20px;
-    border-bottom: 2px solid #ecf0f1;
+    border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 10px;
 }
 
@@ -221,19 +262,19 @@ body {
 
 .hobby h3 {
     font-size: 18px;
-    color: #34495e;
+    color: var(--text-color);
     margin: 0 0 5px 0; /* Remove top margin, keep bottom margin */
 }
 
 .hobby p {
     font-size: 14px;
-    color: #555;
+    color: var(--text-color);
     line-height: 1.4;
     margin: 0; /* Remove default paragraph margin */
 }
 
 .areas-of-interest {
-    background-color: white;
+    background-color: var(--card-color);
     padding: 15px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -242,9 +283,9 @@ body {
 
 .areas-of-interest h2 {
     font-size: 24px;
-    color: #2c3e50;
+    color: var(--text-color);
     margin-bottom: 20px;
-    border-bottom: 2px solid #ecf0f1;
+    border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 10px;
 }
 
@@ -271,13 +312,13 @@ body {
 
 .interest h3 {
     font-size: 19px;
-    color: #34495e;
+    color: var(--text-color);
     margin: 0 0 5px 0; /* Remove top margin, keep bottom margin */
 }
 
 .interest p {
     font-size: 15px;
-    color: #555;
+    color: var(--text-color);
     line-height: 1.4;
     margin: 0; /* Remove default paragraph margin */
 }
@@ -288,7 +329,7 @@ body {
 
 /* Skills Section Styling */
 .education{
-    background-color: white;
+    background-color: var(--card-color);
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -299,10 +340,10 @@ body {
 
 .education h2 {
     font-size: 28px;
-    color: #333;
+    color: var(--text-color);
     margin-top: 3px;
     margin-bottom: 22px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 10px;
 }
 
@@ -318,7 +359,7 @@ body {
     top: 20px;
     bottom: 0;
     width: 2px;
-    background: #333;
+    background: var(--secondary-color);
 }
 
 .timeline-item {
@@ -334,11 +375,11 @@ body {
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background: #007bff;
+    background: var(--primary-color);
 }
 
 .timeline-content {
-    background: #f9f9f9;
+    background: var(--timeline-color);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -349,11 +390,11 @@ body {
     opacity: 0;
     overflow: hidden;
     transition: all 0.3s ease-out;
-    background-color: #f9f9f9;
+    background-color: var(--timeline-color);
     border-radius: 0 0 8px 8px;
     padding: 0 15px;
     margin: 0 -15px;
-    color: #777;
+    color: var(--text-color)
 }
 
 .timeline-content:hover .description {
@@ -375,24 +416,24 @@ body {
 .timeline-content h3 {
     margin-top: 0;
     margin-bottom: 10px;
-    color: #007bff;
+    color: var(--text-color);
     font-size: 20px;
 }
 
 .timeline-content .date {
     font-weight: bold;
-    color: #555;
+    color: var(--text-color);
     margin-bottom: 5px;
 }
 
 .timeline-content .institution {
-    color: #777;
+    color: var(--text-color);
     font-style: italic;
 }
 /* -- End of Skills Section Styling -- */
 
 .work-experience{
-    background-color: white;
+    background-color: var(--card-color);
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -401,9 +442,9 @@ body {
 
 .work-experience h2 {
     font-size: 28px;
-    color: #333;
+    color: var(--text-color);
     margin-top: 3px;
     margin-bottom: 22px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 10px;
 }
