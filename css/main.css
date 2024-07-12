@@ -148,7 +148,6 @@ body {
 
 
 /* About Section Styling */
-/* About Section Styling */
 .about {
     margin-top: 30px;
 }
@@ -333,6 +332,34 @@ body {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content .description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    background-color: #f9f9f9;
+    border-radius: 0 0 8px 8px;
+    padding: 0 15px;
+    margin: 0 -15px;
+    color: #777;
+}
+
+.timeline-content:hover .description {
+    max-height: 100px;
+    opacity: 1;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.timeline-content {
+    transition: all 0.3s ease-out;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-content h3 {
