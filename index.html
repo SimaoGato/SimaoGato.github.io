@@ -6,14 +6,13 @@
         <title>Simão Gato - About Me</title>
         <link rel="icon" href="images/me.png">
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="css/mobile.css">
         <script>
         (function() {
             const currentTheme = localStorage.getItem('theme') || 'light';
             document.documentElement.setAttribute('data-applied-mode', currentTheme);
         })();
         </script>
-        <script defer src="main.js"></script>
 
     </head>
     <body>
@@ -60,6 +59,9 @@
                 <section class="navbar-container">
                     <div class="header-nav">
                         <h1>About Me</h1>
+                        <button class="menu-toggle" aria-label="Toggle Menu">
+                            <img src="icons/menu.png" alt="Menu Icon">
+                        </button>
                         <nav class="navigation">
                             <li><a href="./" class="active">About</a></li>
                             <li><a href="./resume">Resume</a></li>

@@ -196,6 +196,10 @@ body {
     border-radius: 50%; /* Make the image rounded if desired */
 }
 
+.menu-toggle {
+    display: none; /* Hide the menu toggle button by default */
+}
+
 /* -- End of Header and Navigation Styling -- */
 
 
