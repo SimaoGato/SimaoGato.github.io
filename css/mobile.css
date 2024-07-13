@@ -80,5 +80,18 @@
     .hobby {
         width: 100%;
     }
+
+    .skills-list {
+        flex-direction: column;
+        gap: 20px; /* Reduce gap for smaller screens */
+    }
+
+    .skill-category ul {
+        grid-template-columns: 1fr; /* One per line on mobile */
+    }
+
+    .skill-category ul li {
+        justify-content: flex-start; /* Align items to the start */
+    }
 }
 
