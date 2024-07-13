@@ -513,3 +513,10 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.proficiency-note {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 14px;
+}
