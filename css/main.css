@@ -29,6 +29,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
+    text-align: justify;
 }
 
 .container {
@@ -220,6 +221,7 @@ body {
     margin-bottom: 15px;
     line-height: 1.6;
     color: var(--text-color);
+    text-align: justify;
 }
 
 /* Hobbies Section Styling */
@@ -616,6 +618,7 @@ body {
 .card-back p {
     margin: 15px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .card-back a {
