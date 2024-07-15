@@ -93,5 +93,61 @@
     .skill-category ul li {
         justify-content: flex-start; /* Align items to the start */
     }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Change to single column */
+        gap: 30px; /* Increase gap between cards */
+    }
+
+    .project-card {
+        height: auto; /* Allow height to adjust based on content */
+        max-width: 100%; /* Ensure card doesn't exceed screen width */
+    }
+
+    .card-front, .card-back {
+        position: relative; /* Change from absolute positioning */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .card-front {
+        padding-bottom: 15px; /* Add some padding at the bottom */
+    }
+
+    .card-back {
+        transform: none; /* Remove the rotation */
+        display: none; /* Hide initially */
+    }
+
+    .project-card:hover .card-inner {
+        transform: none; /* Remove flip effect on hover */
+    }
+
+    .project-card.active .card-front {
+        display: none; /* Hide front when active */
+    }
+
+    .project-card.active .card-back {
+        display: flex; /* Show back when active */
+    }
+
+    .card-front img {
+        height: 150px; /* Reduce image height for mobile */
+    }
+
+    .card-front h3 {
+        font-size: 18px; /* Reduce title font size */
+        margin-bottom: 10px;
+    }
+
+    .project-tag {
+        font-size: 10px; /* Reduce tag font size */
+        margin: 2px;
+    }
+
+    .card-back p {
+        font-size: 14px; /* Reduce paragraph font size */
+        margin: 10px;
+    }
+
 }
 

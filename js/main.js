@@ -28,3 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
         navigation.classList.toggle('show');
     });
 });
+
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
