@@ -766,17 +766,19 @@ body {
 }
 
 .back-button {
-    display: block;
+    display: inline-block;
     margin-bottom: 0.5em;
     color: var(--primary-color);
     text-decoration: none;
     font-size: 0.9em;
     font-weight: bold;
     transition: color 0.3s ease;
-    padding: 15px 0px 0px 0px;
+    padding: 16px 0px 0px 0px;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .back-button:hover {
     color: var(--primary-color-hover); /* Define a hover color in your CSS variables */
+    border-bottom-color: var(--primary-color-hover); /* Define a hover color in your CSS variables */
 }
 
