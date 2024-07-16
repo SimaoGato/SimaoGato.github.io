@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Article Title - Simão Gato</title>
+        <link rel="icon" href="../images/me.png">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/mobile.css">
+        <script>
+        (function() {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-applied-mode', currentTheme);
+        })();
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <div class="picture">
+                    <img src="../images/me.png" alt="Picture of Simão Gato">
+                </div>
+                <div class="info">
+                    <h1>Simão Gato</h1>
+                    <div class="contact-info">
+                        <div class="info-container">
+                            <div class="icon"><img src="../icons/email.png" alt="Email Icon"></div>
+                            <div class="details">
+                                <h2>E-mail</h2>
+                                <p>simao.valedegato@gmail.com</p>
+                                <p>simao.gato@tecnico.ulisboa.pt</p>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <div class="icon"><img src="../icons/birthday.png" alt="Birthday Icon"></div>
+                            <div class="details">
+                                <h2>Birthday</h2>
+                                <p>May 17, 2002</p>
+                            </div>
+                        </div>
+                        <div class="info-container">
+                            <div class="icon"><img src="../icons/location.png" alt="Location Icon"></div>
+                            <div class="details">
+                                <h2>Location</h2>
+                                <p>Lisboa, Portugal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/simao-vale-de-gato/" target="_blank"><img src="../icons/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/SimaoGato" target="_blank"><img src="../icons/github.png" alt="GitHub"></a>
+                    <a href="https://orcid.org/0009-0008-4703-6701" target="_blank"><img src="../icons/orcid.png" alt="ORCID"></a>
+                </div>
+            </aside>
+            <main class="main-content">
+                <section class="navbar-container">
+                    <div class="header-nav">
+                        <h1>Musings</h1>
+                        <button class="menu-toggle" aria-label="Toggle Menu">
+                            <img src="../icons/menu.png" alt="Menu Icon">
+                        </button>
+                        <nav class="navigation">
+                            <li><a href="../">About</a></li>
+                            <li><a href="../resume">Resume</a></li>
+                            <li><a href="../portfolio">Portfolio</a></li>
+                            <li><a href="../musings" class="active">Musings</a></li>
+                            <li><a href="../contact">Contact</a></li>
+                            <li><a href="../assets/curriculum-vitae.pdf" target="_blank">CV</a></li>
+                            <img src="../icons/moon.png" id="background-mode" alt="Moon Icon">
+                        </nav>
+                    </div>
+                </section>
+                <section class="article-container">
+                    <article class="musing">
+                        <a href="../musings" class="back-button">Back</a>
+                        <h2 class="musing-title">Article Title</h2>
+                        <p class="musing-meta">5 min read | July 16, 2024</p>
+                        <div class="musing-content">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec erat erat. Integer bibendum laoreet ligula, ac auctor arcu dapibus ut. Morbi a cursus ligula. Maecenas vitae urna vel libero commodo bibendum. Sed at risus eu eros vehicula vulputate. Praesent consequat, metus a fringilla fermentum, erat urna vulputate purus, at sollicitudin turpis lacus nec massa. Integer semper ligula vitae metus suscipit, nec eleifend odio vulputate.</p>
+
+                            <img src="./images/article-image1.jpg" alt="Description of image 1" class="article-image">
+
+                            <p>Ut vitae erat malesuada, vestibulum mi at, hendrerit felis. Donec dapibus massa id ultricies pretium. Praesent ac nisl nec velit luctus cursus. Cras nec dictum nunc. Vestibulum non orci nec massa cursus tempus. Integer in nisi viverra, fermentum felis sit amet, ultricies nunc. Nulla facilisi.</p>
+                            
+                            <p>Aliquam erat volutpat. Etiam ut lectus quis felis ullamcorper blandit. Suspendisse nec velit in velit cursus tristique. Curabitur pulvinar, ligula id facilisis finibus, orci magna aliquam nulla, in lacinia arcu orci ut quam. Curabitur bibendum augue vel turpis cursus, id molestie eros eleifend. Integer a mi id nunc vulputate luctus. Duis facilisis, felis a sollicitudin vehicula, ligula nisl suscipit velit, nec sagittis est odio eget nulla.</p>
+
+                            <img src="./images/article-image2.jpg" alt="Description of image 2" class="article-image">
+
+                            <p>Phasellus pharetra sapien id arcu lacinia, in vulputate felis pharetra. Nulla facilisi. Donec tincidunt erat vel turpis commodo, non feugiat mauris consectetur. Donec vel sapien lorem. Etiam ac massa vehicula, aliquam sapien et, fringilla urna. Morbi et tincidunt tortor. Quisque ultricies velit eu urna fermentum, nec faucibus erat dapibus. Maecenas suscipit consequat odio id pulvinar.</p>
+                            
+                            <p>Donec euismod purus eu facilisis bibendum. Donec eget ligula lacinia, eleifend nisi in, accumsan sapien. Ut euismod ligula in dolor vestibulum, vel accumsan eros bibendum. Proin vel luctus ligula. Quisque in libero orci. Donec lobortis, dui vel varius interdum, lectus ex lobortis sapien, nec sagittis risus ex at sapien. Sed consequat mauris sed neque vulputate, at cursus lorem malesuada.</p>
+
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+        <script src="../js/main.js"></script>
+    </body>
+</html>
+

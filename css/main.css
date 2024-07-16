@@ -739,3 +739,44 @@ body {
     font-size: 1em;
     color: var(--text-color);
 }
+
+
+.article-container {
+    background-color: var(--card-color);
+    border-radius: 15px;
+    padding: 0px 30px 30px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.musing-content {
+    margin-top: 1em;
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.article-image {
+    display: block;
+    min-width: 40%;
+    max-width: 40%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    display: block;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 15px 0px 0px 0px;
+}
+
+.back-button:hover {
+    color: var(--primary-color-hover); /* Define a hover color in your CSS variables */
+}
+
