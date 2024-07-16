@@ -8,6 +8,7 @@
     --timeline-color: #fbfcfe;
     --card-color: #fbfcfe;
     --accent-color: #6288da; /* Accent color for buttons and links */
+    --readtime-color: #666666;
 }
 
 :root[data-applied-mode="dark"] {
@@ -20,6 +21,7 @@
     --timeline-color: #6A6A73;
     --card-color: #45474e;
     --accent-color: #254b9d;
+    --readtime-color: #ccc;
 }
 
 /* Base Styles */
@@ -704,4 +706,36 @@ body {
 
 .card-back a:hover {
     text-decoration: underline;
+}
+
+
+
+.musings-container {
+    background-color: var(--card-color);
+    border-radius: 15px;
+    padding: 0px 30px 30px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.musing {
+    border-bottom: 1px solid var(--primary-color);
+    padding: 1em 0;
+}
+
+.musing-title a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.musing-meta {
+    color: var(--readtime-color);
+    font-size: 0.9em;
+}
+
+.musing-synopsis {
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: var(--text-color);
 }
