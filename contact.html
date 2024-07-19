@@ -74,12 +74,32 @@
                     </div>
                 </section>
 
-                <section class="about">
-                    <p>Contact text goes here.</p>
+                <section class="contact-container">
+                    <h2>Contact Me!</h2>
+                    <p class="contact-intro">
+                        Feel free to reach out to me via email at 
+                        <a href="mailto:simao.valedegato@gmail.com">simao.valedegato@gmail.com</a> or
+                        <a href="mailto:simao.gato@tecnico.ulisboa.pt">simao.gato@tecnico.ulisboa.pt</a>.<br>
+                        You can also connect with me on <a href="https://www.linkedin.com/in/simao-vale-de-gato/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+                        Alternatively, you may use the form below to send me a message directly.
+                    </p>
+                    <form action="https://formspree.io/f/xpwawvog" method="POST">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
                 </section>
+
             </main>
         </div>
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
 

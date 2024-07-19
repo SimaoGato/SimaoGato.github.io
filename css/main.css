@@ -791,3 +791,90 @@ body {
     border-bottom-color: var(--primary-color-hover); /* Define a hover color in your CSS variables */
 }
 
+
+
+.contact-container {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-intro {
+    margin-bottom: 20px;
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-intro a {
+    /* make it bold */
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-intro a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.contact-container h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    margin-top: 15px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    margin-top: 5px;
+    padding: 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.contact-container textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-container button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: var(--accent-color);
+}
+
