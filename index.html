@@ -1,144 +1,903 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Simão Gato - About Me</title>
-        <link rel="icon" href="images/me.png">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/mobile.css">
-        <script>
-        (function() {
-            const currentTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-applied-mode', currentTheme);
-        })();
-        </script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simão Vale de Gato — Software Engineer</title>
+<meta name="description" content="Software engineer in Lisbon working on distributed systems: Kafka pipelines, ordering guarantees, and enterprise integration layers.">
+<meta name="author" content="Simão Pedro da Silva Vale de Gato">
 
-    </head>
-    <body>
-        <!-- Common Section Begin -->
-        <div class="container">
-            <aside class="sidebar">
-                <div class="picture">
-                    <img src="images/me.png" alt="Picture of Simão Gato">
-                </div>
-                <div class="info">
-                    <h1>Simão Gato</h1>
-                    <div class="contact-info">
-                        <div class="info-container">
-                            <div class="icon"><img src="icons/email.png" alt="Email Icon"></div>
-                            <div class="details">
-                                <h2>E-mail</h2>
-                                <p>simao.valedegato@gmail.com</p>
-                                <p>simao.gato@tecnico.ulisboa.pt</p>
-                            </div>
-                        </div>
-                        <div class="info-container">
-                            <div class="icon"><img src="icons/birthday.png" alt="Birthday Icon"></div>
-                            <div class="details">
-                                <h2>Birthday</h2>
-                                <p>May 17, 2002</p>
-                            </div>
-                        </div>
-                        <div class="info-container">
-                            <div class="icon"><img src="icons/location.png" alt="Location Icon"></div>
-                            <div class="details">
-                                <h2>Location</h2>
-                                <p>Lisboa, Portugal</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/simao-vale-de-gato/" target="_blank"><img src="icons/linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://github.com/SimaoGato" target="_blank"><img src="icons/github.png" alt="GitHub"></a>
-                    <a href="https://orcid.org/0009-0008-4703-6701" target="_blank"><img src="icons/orcid.png" alt="ORCID"></a>
-                </div>
-            </aside>
-            <main class="main-content">
-                <section class="navbar-container">
-                    <div class="header-nav">
-                        <h1>About Me</h1>
-                        <button class="menu-toggle" aria-label="Toggle Menu">
-                            <img src="icons/menu.png" alt="Menu Icon">
-                        </button>
-                        <nav class="navigation">
-                            <li><a href="./" class="active">About</a></li>
-                            <li><a href="./resume">Resume</a></li>
-                            <li><a href="./portfolio">Portfolio</a></li>
-                            <li><a href="./musings">Musings</a></li>
-                            <li><a href="./contact">Contact</a></li>
-                            <li><a href="assets/curriculum-vitae.pdf" target="_blank">CV</a></li>
-                            <img src="icons/moon.png" id="background-mode" alt="Moon Icon">
-                        </nav>
-                    </div>
-                </section>
-                <!-- Common Section End -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Simão Vale de Gato — Software Engineer">
+<meta property="og:description" content="Distributed systems engineer in Lisbon. Kafka pipelines, ordering guarantees, and the unglamorous middle of enterprise migrations.">
+<meta property="og:url" content="https://simaogato.github.io/">
+<meta property="og:image" content="https://simaogato.github.io/images/portrait.png">
+<meta name="twitter:card" content="summary">
 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%2315181A'/%3E%3Crect x='5' y='14' width='6' height='5' fill='%23E9EBE6'/%3E%3Crect x='14' y='14' width='6' height='5' fill='%236E8BFF'/%3E%3Crect x='23' y='15' width='4' height='3' fill='%237A827E'/%3E%3C/svg%3E">
 
-                <!-- About Section Begin -->
-                <section class="about">
-                    <section class="about-me">
-                        <p> Hello! I'm a Master's student in Computer Science and Engineering at Instituto Superior Técnico, specializing in Cyberphysical Systems and Distributed Systems. As I enter my final year, my thesis focuses on these cutting-edge fields.</p>
-                        <p> I have a keen interest in developing intelligent solutions to enhance and automate daily life. Whether through innovative software applications or integrating hardware like Arduinos and Raspberry Pis, my goal is to create impactful technologies.</p>
-                        <p> This website showcases my educational background, professional qualifications, and personal interests. You'll find detailed information about my academic journey, projects, and hobbies.</p>
-                    </section>
-                    <section class="areas-of-interest">
-                        <h2>Areas of Interest</h2>
-                        <div class="interest-container">
-                            <div class="interest">
-                                <img src="icons/distributed-systems.png" alt="Distributed Systems Icon">
-                                <div class="interest-content">
-                                    <h3>Distributed Systems</h3>
-                                    <p>Currently exploring Blockchain technology applications in decentralized systems to enhance data integrity and security.</p>
-                                </div>
-                            </div>
-                            <div class="interest">
-                                <img src="icons/cyberphysical-systems.png" alt="Cyber Physical Systems Icon">
-                                <div class="interest-content">
-                                    <h3>Cyber Physical Systems</h3>
-                                    <p>Interested about Ambient Intelligence and its integration with physical environments to improve human experiences and efficiency.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="hobbies">
-                        <h2>Hobbies</h2>
-                        <div class="hobbies-container">
-                            <div class="hobby">
-                                <img src="icons/sports.png" alt="Running Icon">
-                                <div class="hobby-content">
-                                    <h3>Sports</h3>
-                                    <p>Enjoy running and playing football to stay active and healthy.</p>
-                                </div>
-                            </div>
-                            <div class="hobby">
-                                <img src="icons/coding.png" alt="Coding Icon">
-                                <div class="hobby-content">
-                                    <h3>Coding</h3>
-                                    <p>Regularly engage in coding challenges in every field of Computer Science.</p>
-                                </div>
-                            </div>
-                            <div class="hobby">
-                                <img src="icons/sound-management.png" alt="Sound Management Icon">
-                                <div class="hobby-content">
-                                    <h3>Sound Management</h3>
-                                    <p>Responsible in managing sound-related activities at my local church.</p>
-                                </div>
-                            </div>
-                            <div class="hobby">
-                                <img src="icons/gaming.png" alt="Gaming Icon">
-                                <div class="hobby-content">
-                                    <h3>Gaming</h3>
-                                    <p>Play video games to relax and unwind after a long day. My personal favorites games are Pokemon, Fifa and Counter-Strike.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- About Section End -->
-            </main>
+<script>
+/* set the theme before first paint so there is no flash */
+(function () {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t !== 'light' && t !== 'dark') {
+      t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,300..500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root,
+[data-theme="light"]{
+  color-scheme:light;
+  --paper:#E9EBE6;
+  --panel:#F4F5F2;
+  --ink:#15181A;
+  --ink-soft:#3C4347;
+  --muted:#7A827E;
+  --rule:#CBCFC8;
+  --signal:#2743E8;
+  --shadow:0 1px 2px rgba(21,24,26,.05);
+}
+[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#101315;
+  --panel:#171B1D;
+  --ink:#E7EAE5;
+  --ink-soft:#AFB6B1;
+  --muted:#79817C;
+  --rule:#272D30;
+  --signal:#7C97FF;
+  --shadow:none;
+}
+:root{
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'Newsreader',Georgia,serif;
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
+  --gutter:clamp(20px,5vw,64px);
+  --band:clamp(56px,8vw,112px);
+  --tile:#F2F3F0;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:clamp(16px,1.05vw,17.5px);
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  transition:background-color .35s ease,color .35s ease;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:2px}
+
+.wrap{max-width:1120px;margin:0 auto;padding-inline:var(--gutter)}
+
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:60;
+  background:var(--panel);border:1px solid var(--signal);
+  padding:.6rem 1rem;font-family:var(--mono);font-size:.75rem;
+}
+.skip:focus{left:var(--gutter);top:8px}
+
+/* ============================================================
+   TYPE
+   ============================================================ */
+.eyebrow{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted);margin:0 0 1.3rem;
+}
+h1,h2,h3{
+  font-family:var(--display);font-weight:600;
+  font-variation-settings:'wdth' 112;
+  letter-spacing:-.02em;line-height:1.06;margin:0;
+}
+h2{font-size:clamp(1.6rem,3.4vw,2.35rem);margin-bottom:2.5rem}
+h3{font-size:1.14rem;letter-spacing:-.01em;line-height:1.3}
+p{margin:0 0 1rem}
+p:last-child{margin-bottom:0}
+.lede{
+  font-size:clamp(1.05rem,1.5vw,1.26rem);color:var(--ink-soft);
+  font-weight:300;max-width:34em;
+}
+
+/* ============================================================
+   TOPBAR
+   ============================================================ */
+.topbar{
+  position:sticky;top:0;z-index:30;
+  background:var(--paper);
+  background:color-mix(in srgb,var(--paper) 84%,transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s ease,background-color .35s ease;
+}
+.topbar.is-stuck{border-bottom-color:var(--rule)}
+.topbar .wrap{display:flex;align-items:center;gap:1.2rem;height:58px}
+.mark{font-family:var(--mono);font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;margin-right:auto}
+.mark b{font-weight:500}
+.mark span{color:var(--muted)}
+.topnav{display:flex;gap:1.4rem}
+.topnav a{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);transition:color .2s ease;
+}
+.topnav a:hover{color:var(--signal)}
+@media (max-width:780px){.topnav{display:none}}
+
+.tbtn{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;
+  background:none;border:1px solid var(--rule);border-radius:3px;
+  color:var(--ink-soft);padding:.4rem .7rem;cursor:pointer;
+  transition:border-color .2s ease,color .2s ease;
+  display:inline-flex;align-items:center;gap:.45rem;
+}
+.tbtn:hover{border-color:var(--signal);color:var(--signal)}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  padding-top:clamp(44px,8vw,92px);
+  padding-bottom:clamp(34px,5vw,54px);
+  display:grid;grid-template-columns:minmax(0,1fr) 226px;
+  gap:clamp(2rem,5vw,4.5rem);align-items:start;
+}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:2.2rem}
+  .vitals{order:-1}
+}
+.name{
+  font-family:var(--display);font-weight:700;
+  font-variation-settings:'wdth' 118;
+  font-size:clamp(2.6rem,8vw,5.4rem);
+  line-height:.94;letter-spacing:-.035em;margin:0 0 1.4rem;
+}
+.role{
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--ink-soft);margin:0 0 2rem;
+}
+.role i{font-style:normal;color:var(--muted)}
+.hero .lede{margin-bottom:2.2rem}
+
+.portrait{
+  width:100%;max-width:226px;aspect-ratio:1;
+  border:1px solid var(--rule);border-radius:4px;
+  background:var(--panel);overflow:hidden;
+}
+.portrait img{width:100%;height:100%;object-fit:cover}
+@media (max-width:860px){.portrait{max-width:130px}}
+
+.vitals{
+  margin-top:1.2rem;font-family:var(--mono);font-size:.7rem;
+  line-height:2;color:var(--muted);letter-spacing:.04em;
+}
+.vitals b{display:block;color:var(--ink);font-weight:500;letter-spacing:.11em;text-transform:uppercase;font-size:.64rem;margin-bottom:.3rem}
+.vitals a:hover{color:var(--signal)}
+
+.links{display:flex;flex-wrap:wrap;gap:.5rem}
+.chip{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;
+  border:1px solid var(--rule);border-radius:3px;padding:.5rem .8rem;
+  display:inline-flex;align-items:center;gap:.5rem;
+  transition:border-color .2s ease,color .2s ease,background-color .2s ease;
+}
+.chip:hover{border-color:var(--signal);color:var(--signal);background:var(--panel)}
+.chip.primary{border-color:var(--ink)}
+.chip.primary:hover{border-color:var(--signal)}
+
+/* ============================================================
+   SIGNATURE — THE STREAM
+   ============================================================ */
+.figure{padding-bottom:var(--band)}
+.stream{
+  position:relative;border:1px solid var(--rule);border-radius:4px;
+  background:var(--panel);overflow:hidden;box-shadow:var(--shadow);
+  transition:background-color .35s ease,border-color .35s ease;
+}
+.stream canvas{display:block;width:100%;height:clamp(160px,21vw,224px)}
+.zone{
+  position:absolute;top:11px;font-family:var(--mono);font-size:.62rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap;
+}
+.zone.a{left:15px}
+.zone.b{left:50%;transform:translateX(-50%);color:var(--signal)}
+.zone.c{right:15px}
+@media (max-width:620px){.zone{font-size:.55rem}.nb{display:none}}
+
+.readout{
+  display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.6rem;
+  margin-top:.95rem;font-family:var(--mono);font-size:.68rem;
+  letter-spacing:.04em;color:var(--muted);
+}
+.readout em{font-style:normal;color:var(--ink-soft);margin-right:auto}
+.stat{display:inline-flex;align-items:center;gap:.5rem}
+.stat i{width:8px;height:8px;display:inline-block;flex:none}
+.stat i.pass{background:var(--ink)}
+.stat i.held{background:var(--signal)}
+.stat i.drop{border:1px solid var(--muted)}
+.stat b{font-weight:500;color:var(--ink);font-variant-numeric:tabular-nums;min-width:2.2ch;display:inline-block}
+@media (max-width:620px){.readout em{flex:1 0 100%;margin-right:0}}
+
+/* ============================================================
+   BANDS + ENTRIES
+   ============================================================ */
+.band{border-top:1px solid var(--rule);padding-block:var(--band)}
+
+.entry{
+  display:grid;grid-template-columns:200px minmax(0,1fr);
+  gap:clamp(1.4rem,4vw,3.4rem);padding-block:2.6rem;
+  border-top:1px solid var(--rule);
+}
+.entry:first-of-type{border-top:0;padding-top:0}
+.entry:last-of-type{padding-bottom:0}
+@media (max-width:820px){.entry{grid-template-columns:1fr;gap:1rem}}
+
+.meta{font-family:var(--mono);font-size:.7rem;letter-spacing:.05em;color:var(--muted);line-height:1.85}
+.meta strong{display:block;color:var(--ink);font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem}
+.meta .stack{display:block;margin-top:.85rem}
+
+.logo{
+  width:38px;height:38px;flex:none;margin-bottom:.9rem;
+  border:1px solid var(--rule);border-radius:5px;
+  background:var(--tile);overflow:hidden;
+}
+.logo img{width:100%;height:100%;object-fit:contain;padding:5px;
+  filter:grayscale(1) contrast(.92);opacity:.72;
+  transition:filter .35s ease,opacity .35s ease;}
+.entry:hover .logo img,.entry:focus-within .logo img{filter:none;opacity:1}
+
+.entry h3{margin-bottom:.65rem}
+.entry p{color:var(--ink-soft);max-width:44em}
+
+.facts{list-style:none;margin:1.1rem 0 0;padding:0;max-width:44em}
+.facts li{position:relative;padding-left:1.5rem;margin-bottom:.55rem;color:var(--ink-soft);font-size:.97em}
+.facts li::before{content:'';position:absolute;left:0;top:.62em;width:7px;height:2px;background:var(--signal)}
+.facts b{font-weight:400;color:var(--ink);font-family:var(--mono);font-size:.86em;letter-spacing:.01em}
+
+.entry.compact{grid-template-columns:1fr;gap:.7rem;padding-block:1.9rem}
+.entry.compact .meta{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap}
+.entry.compact .meta strong{margin-bottom:0}
+.entry.compact .logo{margin-bottom:0}
+
+/* ============================================================
+   PROJECTS
+   ============================================================ */
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(276px,1fr));
+  gap:1px;background:var(--rule);border:1px solid var(--rule);
+  border-radius:4px;overflow:hidden;
+}
+.card{
+  background:var(--panel);padding:1.9rem 1.7rem;
+  display:flex;flex-direction:column;gap:.75rem;
+  transition:background-color .3s ease;
+}
+.card:hover{background:var(--paper)}
+.card .tag{font-family:var(--mono);font-size:.63rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.card p{color:var(--ink-soft);font-size:.95em;margin:0}
+.card .out{margin-top:auto;padding-top:.7rem}
+.out{font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;color:var(--signal);display:inline-flex;gap:.4rem;align-items:center}
+.out:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* ============================================================
+   TOOLKIT
+   ============================================================ */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem)}
+@media (max-width:820px){.two{grid-template-columns:1fr;gap:3.5rem}}
+
+.kit{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.8rem 2.4rem}
+.kit h4{
+  font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;margin:0 0 .75rem;padding-bottom:.65rem;
+  border-bottom:1px solid var(--rule);
+}
+.kit ul{list-style:none;margin:0;padding:0;font-family:var(--mono);font-size:.78rem;line-height:2;color:var(--ink-soft)}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{border-top:1px solid var(--rule);padding-block:2.3rem 3.2rem}
+.footrow{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem 1.4rem;
+  font-family:var(--mono);font-size:.69rem;letter-spacing:.05em;color:var(--muted);
+}
+.footrow a:hover{color:var(--signal)}
+
+/* ============================================================
+   MOTION
+   ============================================================ */
+.rise{opacity:0;transform:translateY(14px);animation:rise .85s cubic-bezier(.2,.7,.3,1) forwards}
+.d1{animation-delay:.04s}.d2{animation-delay:.14s}.d3{animation-delay:.24s}
+.d4{animation-delay:.34s}.d5{animation-delay:.44s}.d6{animation-delay:.54s}
+@keyframes rise{to{opacity:1;transform:none}}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .75s cubic-bezier(.2,.7,.3,1),transform .75s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rise{opacity:1;transform:none;animation:none}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{transition-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <a class="mark" href="#top"><b>Simão Vale de Gato</b> <span>— Lisboa</span></a>
+    <nav class="topnav">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#background">Background</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="tbtn" id="themeBtn" type="button" aria-label="Switch colour theme">
+      <span id="themeIcon">☾</span><span id="themeLabel">Dark</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap" id="top">
+    <div>
+      <h1 class="name rise d1">Simão<br>Vale de Gato</h1>
+      <p class="role rise d2">Software Engineer <i>·</i> Distributed Systems <i>·</i> Lisboa, Portugal</p>
+      <p class="lede rise d3">
+        I work on the parts of a system you only notice when they break — event pipelines,
+        ordering guarantees, and the integration layers between platforms that were never
+        designed to talk to each other. Currently at freiheit.com, moving a global logistics
+        platform off its legacy stack without dropping a message.
+      </p>
+      <div class="links rise d4">
+        <a class="chip primary" href="mailto:simao.valedegato@gmail.com">simao.valedegato@gmail.com</a>
+        <a class="chip" href="https://github.com/SimaoGato" rel="me">GitHub ↗</a>
+        <a class="chip" href="https://www.linkedin.com/in/simao-vale-de-gato/" rel="me">LinkedIn ↗</a>
+        <a class="chip" href="assets/curriculum-vitae.pdf">CV (PDF) ↓</a>
+      </div>
+    </div>
+
+    <div class="vitals rise d2">
+      <div class="portrait"><img src="images/portrait.png" alt="Simão Vale de Gato" width="226" height="226"></div>
+      <div style="margin-top:1.1rem">
+        <b>Now</b>
+        Software Engineer, freiheit.com<br>
+        Lisboa · open to conversations
+      </div>
+      <div style="margin-top:1.1rem">
+        <b>Elsewhere</b>
+        <a href="https://orcid.org/0009-0008-4703-6701">ORCID ↗</a><br>
+        <a href="https://ieeexplore.ieee.org/document/11310081">IEEE VTC 2025 ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE FIGURE ============ -->
+  <section class="figure wrap rise d6">
+    <div class="stream">
+      <span class="zone a">topic<span class="nb"> · 12 partitions</span></span>
+      <span class="zone b">middleware</span>
+      <span class="zone c">downstream</span>
+      <canvas id="stream" role="img"
+        aria-label="Animated diagram of an event stream. Events flow along five partition lanes into a middleware gate. Irrelevant events are filtered out, out-of-order events are held in a buffer and re-emitted in sequence.">
+      </canvas>
+    </div>
+    <div class="readout">
+      <em>Fig. — what my day job actually looks like.</em>
+      <span class="stat"><i class="pass"></i> forwarded <b id="cPass">0</b></span>
+      <span class="stat"><i class="drop"></i> filtered <b id="cDrop">0</b></span>
+      <span class="stat"><i class="held"></i> held <b id="cHold">0</b></span>
+      <button class="tbtn" id="streamBtn" type="button">Pause</button>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="band wrap reveal" id="work">
+    <p class="eyebrow">Work</p>
+    <h2>Where the events go</h2>
+
+    <article class="entry">
+      <div class="meta">
+        <span class="logo"><img src="images/logo-freiheit.png" alt="freiheit.com" width="38" height="38" loading="lazy"></span>
+        <strong>freiheit.com</strong>
+        02.2026 — present
+        <span class="stack">Java · Kafka · Salesforce (Apex) · GCP · Grafana · Testcontainers</span>
+      </div>
+      <div>
+        <h3>Enterprise logistics platform migration</h3>
+        <p>
+          A global shipping platform moving off a legacy stack onto a CRM-backed one, with Kafka
+          in the middle and a downstream consumer that could not keep up. I designed and built the
+          Java middleware that sits between them: it drops events the target system will never care
+          about, and holds out-of-order events until the ones in front of them arrive, so the
+          sequence downstream is the sequence that actually happened.
+        </p>
+        <ul class="facts">
+          <li>Cut load on an overloaded downstream consumer by <b>~70%</b>, materially improving end-system stability</li>
+          <li>Main topic averages <b>~5M events/day across 12 partitions</b></li>
+          <li>Ran the production cutover in a <b>15-minute window</b> — copied consumer offsets, switched consumer group config, lost nothing</li>
+          <li>Worked both sides of the seam: Apex classes, triggers and unit tests in Salesforce, plus the service turning Kafka events into HTTP calls to it</li>
+          <li>Set up the project scaffolding and CI/CD to the client's engineering standards; integration tests with JUnit and Testcontainers; Grafana dashboards and alerts for throughput and failures</li>
+          <li>Run requirements sessions with the client and act as technical point of contact between them and an external development partner</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <span class="logo"><img src="images/logo-freiheit.png" alt="freiheit.com" width="38" height="38" loading="lazy"></span>
+        <strong>freiheit.com</strong>
+        11.2025 — 02.2026
+        <span class="stack">Go · Flutter · Bitbucket Pipelines · GCP · tree-sitter · LLM tooling</span>
+      </div>
+      <div>
+        <h3>Dentsply Sirona — build and security tooling</h3>
+        <p>
+          A Go and Flutter codebase with a CI pipeline slow enough to change how people worked,
+          and a security review nobody had time to do by hand.
+        </p>
+        <ul class="facts">
+          <li>Took CI runtime from <b>~50 min to ~30 min</b> by mapping build dependencies, parallelising independent stages into build groups, and isolating Flutter tests as the real bottleneck</li>
+          <li>Built a triage tool for <b>~100 exposed endpoints</b>: it extracts call chains with tree-sitter, runs several independent LLM assessments, then uses a final model to settle disagreements and surface the critical ones</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="entry">
+      <div class="meta">
+        <span class="logo"><img src="images/logo-ist.png" alt="Instituto Superior Técnico" width="38" height="38" loading="lazy"></span>
+        <strong>Instituto Superior Técnico</strong>
+        01.2025 — 01.2026
+        <span class="stack">Teaching Assistant</span>
+      </div>
+      <div>
+        <h3>Operating Systems · Ambient Intelligence · Computer Architecture</h3>
+        <p>
+          Lab sessions and student support across one master's course and two undergraduate ones —
+          still the fastest way I know to find out whether you actually understand something.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="band wrap reveal" id="projects">
+    <p class="eyebrow">Built on my own time</p>
+    <h2>Things I shipped because<br>someone needed them</h2>
+    <div class="grid">
+
+      <article class="card">
+        <span class="tag">Personal project · 2026</span>
+        <h3>Escala</h3>
+        <p>
+          A scheduling tool for ~20 church volunteers across sound, multimedia and band teams,
+          replacing a manual process. Generates balanced rosters under blocked-date, skill-level
+          and fairness constraints, then exports an image the group can actually read on a phone.
+          Next.js, Supabase, Google auth.
+        </p>
+        <p>
+          Also my testbed for agent-driven delivery: a seven-stage pipeline — refinement,
+          adversarial review, implementation, code review, rework, QA, knowledge capture — with
+          specialist subagents chosen by file type and bounded retries that escalate to a human.
+          Every release still gets manual QA, and the defects get filed as follow-up stories.
+        </p>
+        <a class="out" href="https://github.com/SimaoGato/scheduler">github.com/SimaoGato/scheduler ↗</a>
+      </article>
+
+      <article class="card">
+        <span class="tag">Master's thesis · 2024–2025</span>
+        <h3>SafeBike</h3>
+        <p>
+          A cyclist collision warning system: an Android app in Kotlin with a novel location
+          snapping algorithm and a trajectory prediction model. Reduced mean spatial error by up
+          to 40% against baseline methods.
+        </p>
+        <p>Accepted and presented at IEEE VTC 2025 Fall.</p>
+        <a class="out" href="https://ieeexplore.ieee.org/document/11310081">Read the paper — IEEE Xplore ↗</a>
+      </article>
+
+      <article class="card">
+        <span class="tag">Master's · Ubiquitous Computing</span>
+        <h3>PharmacIST</h3>
+        <p>
+          A pharmacy-finding app in Flutter with a Go backend and MySQL: pharmacy maps, medicine
+          search, stock information, user ratings and alerts, built on Firebase and the Google Maps
+          API. Offline-tolerant by design, because the moment you need a pharmacy is rarely the
+          moment you have signal.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Master's · Ambient Intelligence</span>
+        <h3>Smart Engagement Room</h3>
+        <p>
+          A classroom that pays attention back: computer vision for attendance, lighting that
+          follows where people actually sit, and gesture detection to flag when a student is lost.
+          Arduino and Raspberry Pi at the edge — where I learned that most sensor problems are
+          physical problems.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ BACKGROUND ============ -->
+  <section class="band wrap reveal" id="background">
+    <div class="two">
+      <div>
+        <p class="eyebrow">Background</p>
+        <h2>Education</h2>
+
+        <article class="entry compact">
+          <div class="meta">
+            <span class="logo"><img src="images/logo-ist.png" alt="Instituto Superior Técnico" width="38" height="38" loading="lazy"></span>
+            <strong>MSc, IST</strong>
+            <span>09.2023 — 11.2025</span>
+          </div>
+          <div>
+            <h3>Computer Science and Engineering</h3>
+            <p>
+              Specialised in Distributed Systems and Cyber-Physical Systems. GPA 17.2/20.
+              Thesis published at IEEE VTC 2025 Fall. Held a research grant under the
+              Recovery and Resilience Plan and Next Generation EU funds.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry compact">
+          <div class="meta">
+            <span class="logo"><img src="images/logo-ntnu.png" alt="NTNU" width="38" height="38" loading="lazy"></span>
+            <strong>NTNU, Trondheim</strong>
+            <span>08.2024 — 12.2024</span>
+          </div>
+          <div>
+            <h3>Erasmus exchange semester</h3>
+            <p>Parallel Computing, Design of Cyber-Physical Systems, Real-Time Systems, Applied Data Science.</p>
+          </div>
+        </article>
+
+        <article class="entry compact">
+          <div class="meta">
+            <span class="logo"><img src="images/logo-ist.png" alt="Instituto Superior Técnico" width="38" height="38" loading="lazy"></span>
+            <strong>BSc, IST</strong>
+            <span>09.2020 — 08.2023</span>
+          </div>
+          <div>
+            <h3>Computer Science and Engineering</h3>
+            <p>GPA 15/20.</p>
+          </div>
+        </article>
+      </div>
+
+      <div>
+        <p class="eyebrow">Toolkit</p>
+        <h2>What I reach for</h2>
+        <div class="kit">
+          <div>
+            <h4>Languages</h4>
+            <ul><li>Java</li><li>Python</li><li>Go</li><li>C</li><li>Kotlin</li><li>TypeScript</li></ul>
+          </div>
+          <div>
+            <h4>Systems &amp; data</h4>
+            <ul><li>Apache Kafka</li><li>PostgreSQL / Supabase</li><li>Schema migrations</li><li>Salesforce / Apex</li></ul>
+          </div>
+          <div>
+            <h4>Infra &amp; observability</h4>
+            <ul><li>Docker</li><li>Kubernetes (k9s, Skaffold)</li><li>GCP</li><li>Grafana</li><li>Datadog</li><li>Bitbucket Pipelines</li></ul>
+          </div>
+          <div>
+            <h4>Testing</h4>
+            <ul><li>JUnit</li><li>Testcontainers</li><li>Integration-first</li></ul>
+          </div>
+          <div>
+            <h4>Spoken</h4>
+            <ul><li>Portuguese — native</li><li>English — B2</li><li>French — A1</li></ul>
+          </div>
         </div>
-    <script src="js/main.js"></script>
-    </body>
-</html>
+      </div>
+    </div>
+  </section>
 
+  <!-- ============ CONTACT ============ -->
+  <section class="band wrap reveal" id="contact">
+    <div class="two">
+      <div>
+        <p class="eyebrow">Away from the keyboard</p>
+        <h2>Off screen</h2>
+        <p class="lede">
+          I run the sound desk at my church in Sintra — wireless mics, logistics, and the
+          particular stress of a live room. Otherwise: running, football, home automation,
+          and a Steam backlog I am losing to.
+        </p>
+      </div>
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Say hello</h2>
+        <p class="lede" style="margin-bottom:1.7rem">
+          Open to conversations about distributed systems, event-driven architecture, and teams
+          that care about what happens after deploy.
+        </p>
+        <div class="links">
+          <a class="chip primary" href="mailto:simao.valedegato@gmail.com">Email me</a>
+          <a class="chip" href="https://www.linkedin.com/in/simao-vale-de-gato/">LinkedIn ↗</a>
+          <a class="chip" href="https://github.com/SimaoGato">GitHub ↗</a>
+          <a class="chip" href="https://orcid.org/0009-0008-4703-6701">ORCID ↗</a>
+          <a class="chip" href="assets/curriculum-vitae.pdf">CV (PDF) ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footrow">
+    <span>Simão Pedro da Silva Vale de Gato</span>
+    <span>Lisboa, Portugal · <a href="mailto:simao.valedegato@gmail.com">simao.valedegato@gmail.com</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------------- theme ---------------- */
+  var btn = document.getElementById('themeBtn');
+  var icon = document.getElementById('themeIcon');
+  var label = document.getElementById('themeLabel');
+
+  function paintButton() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    icon.textContent = dark ? '☀' : '☾';
+    label.textContent = dark ? 'Light' : 'Dark';
+    btn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+  }
+  paintButton();
+
+  btn.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    paintButton();
+    readPalette();
+  });
+
+  /* ---------------- sticky header ---------------- */
+  var bar = document.getElementById('topbar');
+  function onScroll() { bar.classList.toggle('is-stuck', window.scrollY > 8); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---------------- scroll reveals ---------------- */
+  var reveals = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    for (var r = 0; r < reveals.length; r++) reveals[r].classList.add('in');
+  } else {
+    var revObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); revObs.unobserve(en.target); }
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.05 });
+    for (var i = 0; i < reveals.length; i++) revObs.observe(reveals[i]);
+  }
+
+  /* ---------------- the stream ---------------- */
+  var canvas = document.getElementById('stream');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+
+  var LANES = 5, PAD_T = 46, PAD_B = 28;
+  var W = 0, H = 0, gate = 0, speed = 0;
+  var events = [], spawnAcc = 0, last = 0, raf = null;
+  var onScreen = true, wanted = !reduce, staticMode = reduce;
+  var stats = { pass: 0, drop: 0, hold: 0 };
+  var pal = { ink: '#15181A', signal: '#2743E8', muted: '#7A827E', rule: '#CBCFC8' };
+
+  var out = {
+    pass: document.getElementById('cPass'),
+    drop: document.getElementById('cDrop'),
+    hold: document.getElementById('cHold')
+  };
+  var sBtn = document.getElementById('streamBtn');
+
+  function readPalette() {
+    var cs = getComputedStyle(root);
+    pal.ink = cs.getPropertyValue('--ink').trim() || pal.ink;
+    pal.signal = cs.getPropertyValue('--signal').trim() || pal.signal;
+    pal.muted = cs.getPropertyValue('--muted').trim() || pal.muted;
+    pal.rule = cs.getPropertyValue('--rule').trim() || pal.rule;
+    if (!raf && canvas) drawFrame();
+  }
+
+  function laneY(i) { return PAD_T + i * (H - PAD_T - PAD_B) / (LANES - 1); }
+
+  function resize() {
+    var r = canvas.getBoundingClientRect();
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = Math.max(1, Math.round(r.width * dpr));
+    canvas.height = Math.max(1, Math.round(r.height * dpr));
+    W = r.width; H = r.height;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    gate = Math.round(W * 0.5);
+    speed = W / 10.5;
+    if (!raf) { staticMode ? drawStatic() : drawFrame(); }
+  }
+
+  function queued(lane) {
+    var n = 0;
+    for (var i = 0; i < events.length; i++) {
+      if (events[i].state === 'holding' && events[i].lane === lane) n++;
+    }
+    return n;
+  }
+
+  function bump(key) {
+    stats[key]++;
+    if (out[key]) out[key].textContent = stats[key];
+  }
+
+  function spawn() {
+    var roll = Math.random();
+    var kind = roll < 0.26 ? 'drop' : (roll < 0.44 ? 'hold' : 'pass');
+    events.push({
+      lane: (Math.random() * LANES) | 0,
+      x: -8, kind: kind, state: 'travel', alpha: 1, drift: 0,
+      wait: 0.7 + Math.random() * 1.9,
+      v: speed * (0.9 + Math.random() * 0.2)
+    });
+    if (events.length > 90) events.splice(0, events.length - 90);
+  }
+
+  function step(dt) {
+    spawnAcc += dt;
+    while (spawnAcc > 0.40) { spawnAcc -= 0.40; spawn(); }
+
+    for (var i = events.length - 1; i >= 0; i--) {
+      var e = events[i];
+
+      if (e.state === 'travel') {
+        e.x += e.v * dt;
+        if (e.x >= gate - 5 && !e.judged) {
+          e.judged = true;
+          if (e.kind === 'drop') { e.state = 'dropping'; e.x = gate - 5; bump('drop'); }
+          else if (e.kind === 'hold') { e.state = 'holding'; e.x = gate - 5 - queued(e.lane) * 11; bump('hold'); }
+        }
+      } else if (e.state === 'holding') {
+        e.wait -= dt;
+        if (e.wait <= 0) { e.state = 'travel'; e.kind = 'released'; }
+      } else if (e.state === 'dropping') {
+        e.alpha -= dt * 1.7;
+        e.drift += dt * 16;
+      }
+
+      if (e.x > W + 12) { bump('pass'); events.splice(i, 1); }
+      else if (e.alpha <= 0) { events.splice(i, 1); }
+    }
+  }
+
+  function drawFrame() {
+    ctx.clearRect(0, 0, W, H);
+
+    ctx.strokeStyle = pal.rule;
+    ctx.lineWidth = 1;
+    for (var i = 0; i < LANES; i++) {
+      var ly = Math.round(laneY(i)) + 0.5;
+      ctx.beginPath(); ctx.moveTo(15, ly); ctx.lineTo(W - 15, ly); ctx.stroke();
+    }
+
+    ctx.save();
+    ctx.strokeStyle = pal.signal;
+    ctx.globalAlpha = 0.34;
+    ctx.setLineDash([3, 4]);
+    ctx.beginPath();
+    ctx.moveTo(gate + 0.5, PAD_T - 20);
+    ctx.lineTo(gate + 0.5, H - PAD_B + 15);
+    ctx.stroke();
+    ctx.restore();
+
+    for (var j = 0; j < events.length; j++) {
+      var e = events[j];
+      var y = laneY(e.lane) + e.drift;
+      var x = Math.round(e.x);
+      ctx.save();
+      ctx.globalAlpha = Math.max(0, Math.min(1, e.alpha));
+      if (e.state === 'dropping') {
+        ctx.strokeStyle = pal.muted; ctx.lineWidth = 1;
+        ctx.strokeRect(x - 3.5, Math.round(y) - 3.5, 7, 7);
+      } else if (e.state === 'holding' || e.kind === 'released') {
+        ctx.fillStyle = pal.signal;
+        ctx.fillRect(x - 4, Math.round(y) - 4, 8, 8);
+      } else {
+        ctx.globalAlpha *= 0.78;
+        ctx.fillStyle = pal.ink;
+        ctx.fillRect(x - 3.5, Math.round(y) - 3.5, 7, 7);
+      }
+      ctx.restore();
+    }
+  }
+
+  function drawStatic() {
+    events = [];
+    var preset = [[0.13,0,'pass'],[0.30,2,'pass'],[0.21,4,'pass'],[0.38,1,'pass'],
+                  [0.45,3,'pass'],[0.07,3,'pass'],[0.62,0,'pass'],[0.74,2,'released'],
+                  [0.85,4,'pass'],[0.67,1,'pass'],[0.92,3,'pass']];
+    for (var i = 0; i < preset.length; i++) {
+      events.push({ lane: preset[i][1], x: W * preset[i][0], kind: preset[i][2],
+                    state: 'travel', alpha: 1, drift: 0, judged: true });
+    }
+    events.push({ lane: 1, x: gate - 5, kind: 'hold', state: 'holding', alpha: 1, drift: 0, judged: true });
+    events.push({ lane: 4, x: gate - 5, kind: 'drop', state: 'dropping', alpha: .5, drift: 8, judged: true });
+    stats.pass = 11; stats.drop = 1; stats.hold = 1;
+    out.pass.textContent = stats.pass;
+    out.drop.textContent = stats.drop;
+    out.hold.textContent = stats.hold;
+    drawFrame();
+  }
+
+  function loop(t) {
+    if (!last) last = t;
+    var dt = Math.min((t - last) / 1000, 0.05);
+    last = t;
+    step(dt); drawFrame();
+    raf = requestAnimationFrame(loop);
+  }
+
+  function start() { if (raf || !wanted || !onScreen || document.hidden) return; last = 0; raf = requestAnimationFrame(loop); }
+  function stop() { if (raf) { cancelAnimationFrame(raf); raf = null; } }
+
+  sBtn.addEventListener('click', function () {
+    wanted = !wanted;
+    staticMode = false;
+    sBtn.textContent = wanted ? 'Pause' : 'Resume';
+    if (wanted) { start(); } else { stop(); }
+  });
+
+  readPalette();
+  resize();
+  window.addEventListener('resize', resize);
+
+  if (reduce) {
+    sBtn.textContent = 'Play';
+    drawStatic();
+  }
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (en) {
+      onScreen = en[0].isIntersecting;
+      onScreen ? start() : stop();
+    }, { threshold: 0.01 }).observe(canvas);
+  } else { start(); }
+
+  document.addEventListener('visibilitychange', function () {
+    document.hidden ? stop() : start();
+  });
+})();
+</script>
+
+</body>
+</html>
